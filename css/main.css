@@ -389,6 +389,44 @@ footer .socials .icon svg {
   width: 0.75vw;
 }
 
+footer svg .cls-t {
+  letter-spacing:-.01em;
+  fill: #ffffff;
+}
+
+footer svg .cls-2 {
+  letter-spacing: 0em;
+}
+
+footer svg .cls-3 {
+  fill: #03a89c;
+}
+
+footer svg .cls-4, footer svg .cls-5 {
+  fill: #fff;
+}
+
+footer svg .cls-6 {
+  fill:#b3b3b3;
+}
+
+footer svg .cls-5 {
+  font-family: Montserrat-SemiBold, Montserrat, sans-serif;
+  font-size: 14px;
+}
+
+footer svg .cls-7 {
+  letter-spacing: -.02em;
+}
+
+footer svg .cls-8 {
+  letter-spacing: 0em;
+}
+
+footer svg .cls-9 {
+  letter-spacing: -.01em;
+}
+
 footer .socials .icon svg.larger {
   width: 1.5vw;
 }
