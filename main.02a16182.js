@@ -59,51 +59,27 @@ parcelRequire = (function(e, r, t, n) {
     return f;
 })(
     {
-        yKV9: [
+        d6sW: [
             function(require, module, exports) {
-                !(function() {
-                    for (
-                        var e,
-                            n = function() {},
-                            o = [
-                                "assert",
-                                "clear",
-                                "count",
-                                "debug",
-                                "dir",
-                                "dirxml",
-                                "error",
-                                "exception",
-                                "group",
-                                "groupCollapsed",
-                                "groupEnd",
-                                "info",
-                                "log",
-                                "markTimeline",
-                                "profile",
-                                "profileEnd",
-                                "table",
-                                "time",
-                                "timeEnd",
-                                "timeline",
-                                "timelineEnd",
-                                "timeStamp",
-                                "trace",
-                                "warn"
-                            ],
-                            i = o.length,
-                            r = (window.console = window.console || {});
-                        i--;
-
-                    )
-                        r[(e = o[i])] || (r[e] = n);
-                })();
+                document.querySelector("#contact-form").addEventListener("submit", function() {
+                    event.preventDefault(),
+                        console.log(
+                            "\n          Name: "
+                                .concat(event.target.elements.name.value, "\n          Email: ")
+                                .concat(event.target.elements.email.value, "\n          Subject: ")
+                                .concat(
+                                    event.target.elements.subject.value,
+                                    "\n          Message: "
+                                )
+                                .concat(event.target.elements.message.value, "\n        ")
+                        );
+                });
             },
             {}
         ]
     },
     {},
-    ["yKV9"],
+    ["d6sW"],
     null
 );
-//# sourceMappingURL=plugins.40a68ed9.js.map
+//# sourceMappingURL=main.02a16182.js.map
