@@ -597,8 +597,8 @@ footer .socials .icon svg.larger {
   }
 
   section.markets, section.padding, section.extra-padding {
-    padding-left: 4vw;
-    padding-right: 4vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
   }
 
   .markets > p {
@@ -626,16 +626,16 @@ footer .socials .icon svg.larger {
   }
 
   .card .image {
-    height: 28vh;
-    min-height: 28vh;
-    max-height: 28vh;
+    height: 26vh;
+    min-height: 26vh;
+    max-height: 26vh;
     margin-left: -4vw;
     margin-right: -4vw;
   }
 
   .card.white .header {
-    height: 28%;
-    min-height: 28%;
+    height: 30%;
+    min-height: 30%;
   }
 
   svg.icon {
@@ -675,6 +675,7 @@ footer .socials .icon svg.larger {
   footer .socials .icon {
     width: 8vw;
     height: 8vw;
+    margin: 0 3vw;
   }
 
   footer .socials .icon svg {
