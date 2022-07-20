@@ -634,8 +634,8 @@ footer .socials .icon svg.larger {
   }
 
   .card.white .header {
-    height: 30%;
-    min-height: 30%;
+    height: auto;
+    min-height: auto;
   }
 
   svg.icon {
@@ -727,8 +727,8 @@ footer .socials .icon svg.larger {
   }
 
   .card.white .header {
-    height: 28%;
-    min-height: 28%;
+    height: auto;
+    min-height: auto;
   }
 
   svg.icon {
@@ -807,8 +807,8 @@ footer .socials .icon svg.larger {
   }
 
   .card.white .header {
-    height: 25%;
-    min-height: 25%;
+    height: auto;
+    min-height: auto;
   }
 
   svg.icon {
