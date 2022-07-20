@@ -175,7 +175,7 @@ button {
   line-height: 22px;
   border: none;
   cursor: pointer;
-  padding: 1vh 1.5vw;
+  padding: 8px 24px;
   margin-top: 2vh;
 }
 
@@ -239,6 +239,7 @@ span.cards {
   padding: 5vh 2vw;
   width: -webkit-fill-available;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 span.cards article.card {
@@ -247,7 +248,7 @@ span.cards article.card {
   border-radius: 8px;
   background-color: #F2F2F2;
   padding: 0 2vw 2vw;
-  width: 27%;
+  width: 26%;
   position: relative;
 }
 
@@ -350,7 +351,7 @@ section.light-grey-bg {
 }
 
 section.extra-padding img {
-  width: 63vw;
+  width: 80vw;
 }
 
 #contact-form span.flex {
@@ -577,6 +578,317 @@ footer .socials .icon svg.larger {
   (min-resolution: 1.25dppx),
   (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  section.banner {
+    height: 380px;
+  }
+
+  section.banner article {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+  section.adult-use {
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+
+  section.markets, section.padding, section.extra-padding {
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+
+  .markets > p {
+    padding: 0;
+  }
+
+  span .cards {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  span.cards article.card {
+    width: 100%;
+  }
+
+  .markets span.cards article.card {
+    min-height: 64vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+
+  span.cards article.card.white {
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+
+  .card .image {
+    height: 28vh;
+    min-height: 28vh;
+    max-height: 28vh;
+    margin-left: -4vw;
+    margin-right: -4vw;
+  }
+
+  .card.white .header {
+    height: 28%;
+    min-height: 28%;
+  }
+
+  svg.icon {
+    width: 20vw;
+    bottom: 15vw;
+  }
+
+  svg.icon.smaller {
+    width: 15vw;
+  }
+
+  svg.arrow {
+    width: 4vw;
+  }
+
+  section.extra-padding img {
+    width: 90vw;
+  }
+
+  #contact-form span.flex {
+    flex-direction: column;
+  }
+
+  #contact-form span.flex input:first-child {
+    margin-bottom: 0;
+  }
+
+  footer {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  footer svg.logo {
+    width: 48vw;
+  }
+
+  footer .socials .icon {
+    width: 8vw;
+    height: 8vw;
+  }
+
+  footer .socials .icon svg {
+    width: 2vw;
+  }
+
+  footer .socials .icon svg.larger {
+    width: 4vw;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  section.banner {
+    height: 380px;
+  }
+
+  section.banner article {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+  section.adult-use {
+    padding-left: 6vw;
+    padding-right: 6vw;
+  }
+
+  section.markets, section.padding, section.extra-padding {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .markets > p {
+    padding: 0 1vw;
+  }
+
+  span.cards article.card {
+    width: 100%;
+  }
+
+  .markets span.cards article.card {
+    min-height: 64vh;
+  }
+
+  .card .image {
+    height: 28vh;
+    min-height: 28vh;
+    max-height: 28vh;
+  }
+
+  .card.white .header {
+    height: 28%;
+    min-height: 28%;
+  }
+
+  svg.icon {
+    width: 15vw;
+    bottom: 10vw;
+  }
+
+  svg.icon.smaller {
+    width: 12vw;
+  }
+
+  svg.arrow {
+    width: 2vw;
+  }
+
+  section.extra-padding img {
+    width: 90vw;
+  }
+
+  footer {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  footer svg.logo {
+    width: 48vw;
+  }
+
+  footer .socials .icon {
+    width: 8vw;
+    height: 8vw;
+  }
+
+  footer .socials .icon svg {
+    width: 2vw;
+  }
+
+  footer .socials .icon svg.larger {
+    width: 4vw;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  section.banner article {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  section.adult-use {
+    padding-left: 16vw;
+    padding-right: 16vw;
+  }
+
+  section.markets, section.padding, section.extra-padding {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .markets > p {
+    padding: 0 1vw;
+  }
+
+  span.cards article.card {
+    width: 100%;
+  }
+
+  .markets span.cards article.card {
+    min-height: 64vh;
+  }
+
+  .card .image {
+    height: 28vh;
+    min-height: 28vh;
+    max-height: 28vh;
+  }
+
+  .card.white .header {
+    height: 25%;
+    min-height: 25%;
+  }
+
+  svg.icon {
+    width: 15vw;
+    bottom: 10vw;
+  }
+
+  svg.icon.smaller {
+    width: 12vw;
+  }
+
+  svg.arrow {
+    width: 2vw;
+  }
+
+  footer svg.logo {
+    width: 32vw;
+  }
+
+  footer .socials .icon {
+    width: 5vw;
+    height: 5vw;
+  }
+
+  footer .socials .icon svg {
+    width: 1.25vw;
+  }
+
+  footer .socials .icon svg.larger {
+    width: 2.5vw;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  section.banner article {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  section.adult-use {
+    padding-left: 23vw;
+    padding-right: 23vw;
+  }
+
+  section.markets, section.padding, section.extra-padding {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+  span.cards article.card {
+    width: 27%;
+  }
+
+  .card .image {
+    height: 20vh;
+    min-height: 20vh;
+    max-height: 20vh;
+  }
+
+  footer svg.logo {
+    width: 28vw;
+  }
+
+  footer .socials .icon {
+    width: 4vw;
+    height: 4vw;
+  }
+
+  footer .socials .icon svg {
+    width: 1vw;
+  }
+
+  footer .socials .icon svg.larger {
+    width: 2vw;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
 
 /* ==========================================================================
