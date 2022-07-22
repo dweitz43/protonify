@@ -350,8 +350,17 @@ section.light-grey-bg {
   background-color: #F2F2F2;
 }
 
-section.extra-padding img {
+section.extra-padding:not(.partner-logos) img {
   width: 80vw;
+}
+
+section.partner-logos {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+section.partner-logos img {
+  width: 17vw;
 }
 
 #contact-form span.flex {
@@ -651,8 +660,12 @@ footer .socials .icon svg.larger {
     width: 4vw;
   }
 
-  section.extra-padding img {
+  section.extra-padding:not(.partner-logos) img {
     width: 90vw;
+  }
+
+  section.partner-logos img {
+    width: 50vw;
   }
 
   #contact-form span.flex {
@@ -744,8 +757,12 @@ footer .socials .icon svg.larger {
     width: 2vw;
   }
 
-  section.extra-padding img {
+  section.extra-padding:not(.partner-logos) img {
     width: 90vw;
+  }
+
+  section.partner-logos img {
+    width: 32vw;
   }
 
   footer {
@@ -824,6 +841,10 @@ footer .socials .icon svg.larger {
     width: 2vw;
   }
 
+  section.partner-logos img {
+    width: 19vw;
+  }
+
   footer svg.logo {
     width: 32vw;
   }
@@ -867,6 +888,10 @@ footer .socials .icon svg.larger {
     height: 20vh;
     min-height: 20vh;
     max-height: 20vh;
+  }
+
+  section.partner-logos img {
+    width: 20vw;
   }
 
   footer svg.logo {
