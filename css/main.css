@@ -242,8 +242,40 @@ header {
 }
 
 nav {
-  height: 54px;
+  height: 64px;
   background-color: #F2F2F2;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+nav > img {
+  display: none;
+  margin-left: 18px;
+}
+
+nav > .nav-btn {
+  display: none;
+}
+
+nav > .nav-links {
+  z-index: 1;
+}
+
+nav > .nav-links > a {
+  display: inline-block;
+  padding: 0 3vw;
+  text-decoration: none;
+  color: #000000;
+}
+
+nav > .nav-links > a:hover {
+  color: #03A89C;
+}
+
+nav > #nav-check {
+  display: none;
 }
 
 section.banner {
@@ -695,6 +727,80 @@ footer .socials .icon svg.larger {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  header {
+    display: none;
+  }
+
+  nav {
+    justify-content: space-between;
+  }
+
+  nav > img {
+    display: inline-block;
+  }
+
+  nav > .nav-btn {
+    width: 64px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  nav > .nav-btn > label {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    padding: 18px;
+  }
+
+  nav > .nav-btn > label:hover span,
+  nav #nav-check:checked ~ .nav-btn > label {
+    border-color: #03A89C;
+  }
+
+  nav > .nav-btn > label > span {
+    display: block;
+    width: 100%;
+    border-top: 1px solid #000000;
+  }
+
+  nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #B3B3B3;
+    height: 0;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 64px;
+    left: 0;
+  }
+
+  nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+
+  nav > .nav-links > a > p {
+    padding: 12px 0;
+  }
+
+  nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0;
+  }
+
+  nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 64px);
+    overflow-y: auto;
+  }
+
   section.banner {
     height: 380px;
   }
@@ -806,6 +912,80 @@ footer .socials .icon svg.larger {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 767px) {
+  header {
+    display: none;
+  }
+
+  nav {
+    justify-content: space-between;
+  }
+
+  nav > img {
+    display: inline-block;
+  }
+
+  nav > .nav-btn {
+    width: 64px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  nav > .nav-btn > label {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    padding: 18px;
+  }
+
+  nav > .nav-btn > label:hover span,
+  nav #nav-check:checked ~ .nav-btn > label {
+    border-color: #03A89C;
+  }
+
+  nav > .nav-btn > label > span {
+    display: block;
+    width: 100%;
+    border-top: 1px solid #000000;
+  }
+
+  nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #B3B3B3;
+    height: 0;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 64px;
+    left: 0;
+  }
+
+  nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+
+  nav > .nav-links > a > p {
+    padding: 12px 0;
+  }
+
+  nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0;
+  }
+
+  nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 64px);
+    overflow-y: auto;
+  }
+
   section.banner {
     height: 380px;
   }
